@@ -5,14 +5,14 @@ import java.sql.Date;
 /**
  * Created by mahesh on 5/29/17.
  */
-public class Visit {
+public class Session {
     int idWorkout;
     int idUser;
     String nameOfUser;
     String workoutName;
     Date date;
 
-    public Visit(int idWorkout, int idUser, String nameOfUser, String workoutName, Date date) {
+    public Session(int idWorkout, int idUser, String nameOfUser, String workoutName, Date date) {
         this.idWorkout = idWorkout;
         this.idUser = idUser;
         this.nameOfUser = nameOfUser;
@@ -20,7 +20,7 @@ public class Visit {
         this.date = date;
     }
 
-    public Visit(String nameOfUser, String workoutName, Date date) {
+    public Session(String nameOfUser, String workoutName, Date date) {
         this.idWorkout = 0;
         this.idUser = 0;
         this.nameOfUser = nameOfUser;

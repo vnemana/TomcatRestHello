@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 import java.sql.Connection;
 import java.util.Date;
 
-class VisitDaoTest {
+class SessionDaoTest {
     @Test
     public void testInsertVisit(){
         try {
             Connection dbConn = SQLFactory.getConnection();
-            VisitDao visitDao = new VisitDao();
+            SessionDao sessionDao = new SessionDao();
             Date date = new Date();
-            visitDao.insertVisit(dbConn, 1, 1, date);
+            sessionDao.insertSession(dbConn, 1, 1, date);
             Assert.assertTrue(true);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

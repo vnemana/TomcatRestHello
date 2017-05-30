@@ -1,8 +1,5 @@
 package com.mahesh.database.dbObjects;
 
-/**
- * Created by mahesh on 5/29/17.
- */
 public class Set {
     public enum Unit {
         POUNDS ("LB"), KILOGRAMS ("KG");

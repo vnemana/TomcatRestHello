@@ -8,7 +8,7 @@ public class SetDao {
     public void insertSet (Connection dbConn, int idVisit, int idExercise, float weight, String unit,
                            int reps, int setNumber) {
         if (idVisit <= 0)
-            throw new IllegalArgumentException("Visit ID is invalid");
+            throw new IllegalArgumentException("Session ID is invalid");
         if (idExercise <= 0)
             throw new IllegalArgumentException("Exercise ID is invalid");
 

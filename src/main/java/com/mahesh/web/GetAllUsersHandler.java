@@ -24,12 +24,10 @@ public class GetAllUsersHandler extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserDao userDao = new UserDao();
         Connection dbConn = null;
-        System.out.println ("Calling GetAllUsers....");
         try {
             dbConn = SQLFactory.getConnection();
             ArrayList<User> users = userDao.getAllUsers(dbConn);
             req.setAttribute("userList", users);
-            System.out.println("Num Users: " + users.size());
             RequestDispatcher rd = req.getRequestDispatcher("createUser.jsp");
             rd.forward(req, resp);
         } catch (ClassNotFoundException e) {

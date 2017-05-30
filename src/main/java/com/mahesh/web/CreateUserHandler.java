@@ -31,12 +31,13 @@ public class CreateUserHandler extends HttpServlet {
         String lname = request.getParameter("lname");
         String mname = request.getParameter("mname");
         String username = request.getParameter("username");
+        String password = request.getParameter("password");
         // Actual logic goes here.
         UserDao userDao = new UserDao();
         Connection dbConn = null;
         try {
             dbConn = SQLFactory.getConnection();
-            userDao.insertUser(dbConn, fname, lname, mname, username);
+            userDao.insertUser(dbConn, fname, lname, mname, username, password);
             RequestDispatcher rd = request.getRequestDispatcher("createUser.jsp");
             String message = username + " created";
             request.setAttribute("message", message);

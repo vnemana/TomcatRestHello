@@ -55,6 +55,8 @@
         Middle Name: <input type="text" name="mname"><br>
         <br>
         Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <br>
         <input type="submit" value="submit">
     </form>
 

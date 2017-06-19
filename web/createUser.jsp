@@ -14,7 +14,7 @@
     .first {
         width: 75%;
         color: black;
-        background-color: #d2ff95;
+        background-color: white;
         border: 2px solid darkblue;
         padding: 0.5%;
     }
@@ -49,16 +49,81 @@
         <title>Create a User</title>
     </head>
     <body style="background-color:#b1f7ff;">
-    <form action="createuser" method="post">
-        First Name: <input type="text" name="fname"><br>
-        Last Name: <input type="text" name="lname"><br>
-        Middle Name: <input type="text" name="mname"><br>
+
+    <form method="post" action="createuser">
+        <table
+                style="text-align: left; width: 952px; height: 116px; margin-left: auto; margin-right: auto; background-color: rgb(153, 255, 255);"
+                border="0" cellpadding="2" cellspacing="2">
+            <tbody>
+            <tr>
+                <td style="vertical-align: top; text-align: right; width: 50%;">First
+                    Name:<br>
+                </td>
+                <td style="vertical-align: top; width: 50%;"><input size="50"
+                                                                    maxlength="64" placeholder="&lt;Enter your first name here&gt;" name="fname"><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; text-align: right; width: 50%;">Last
+                    Name:<br>
+                </td>
+                <td style="vertical-align: top; width: 50%;"><input
+                        placeholder="&lt;Enter your last name here&gt;" maxlength="64" size="50"
+                        name="lname"><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; text-align: right; width: 50%;">Middle
+                    Name:<br>
+                </td>
+                <td style="vertical-align: top; width: 50%;"><input
+                        placeholder="&lt;Enter your middle name here&gt;" maxlength="64" size="50"
+                        name="mname"><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;"><br>
+                </td>
+                <td style="vertical-align: top;"><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; text-align: right; width: 50%;">Username:<br>
+                </td>
+                <td style="vertical-align: top; width: 50%;"><input
+                        placeholder="&lt;Enter your username here&gt;" maxlength="64" size="50"
+                        name="username"><br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; width: 50%; text-align: right;">Password:<br>
+                </td>
+                <td style="vertical-align: top;"><input
+                        placeholder="&lt;Enter your password here&gt;" maxlength="64" size="50"
+                        name="password" type="password"><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="1"
+                    style="vertical-align: top; text-align: center;"><input name="submit"
+                                                                            value="Submit" type="submit"><br>
+                </td>
+            </tr>
+            </tbody>
+        </table>
         <br>
-        Username: <input type="text" name="username"><br>
-        Password: <input type="password" name="password"><br>
-        <br>
-        <input type="submit" value="submit">
     </form>
+
+    <%--<form action="createuser" method="post">--%>
+        <%--First Name: <input type="text" name="fname"><br>--%>
+        <%--Last Name: <input type="text" name="lname"><br>--%>
+        <%--Middle Name: <input type="text" name="mname"><br>--%>
+        <%--<br>--%>
+        <%--Username: <input type="text" name="username"><br>--%>
+        <%--Password: <input type="password" name="password"><br>--%>
+        <%--<br>--%>
+        <%--<input type="submit" value="submit">--%>
+    <%--</form>--%>
 
     <%out.println("<br>" + request.getAttribute("message") + "<br>"); %>
     </body>

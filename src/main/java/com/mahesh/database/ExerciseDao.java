@@ -17,7 +17,7 @@ public class ExerciseDao {
         if (idUser <= 0)
             throw new IllegalArgumentException("User ID is invalid");
 
-        String insertSQL = "insert into exercise (name, bodypart, scope, type, idUser) values " +
+        String insertSQL = "insert into exercise (ex_name, bodypart, scope, ex_type, idUser) values " +
                 "('" + name + "','" + bodyPart + "','" + scope + "','" + type + "'," + idUser + ")";
         try {
             Statement statement = dbConn.createStatement();

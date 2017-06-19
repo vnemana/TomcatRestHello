@@ -8,7 +8,7 @@ import java.util.Date;
 
 class SessionDaoTest {
     @Test
-    public void testInsertVisit(){
+    public void testInsertSession(){
         try {
             Connection dbConn = SQLFactory.getConnection();
             SessionDao sessionDao = new SessionDao();

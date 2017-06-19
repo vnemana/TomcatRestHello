@@ -25,10 +25,10 @@ public class Exercise {
             return scope;
         }
     }
-    public enum Type {
+    public enum ExType {
         FREE_WEIGHTS ("FREE_WEIGHTS"), CARDIO ("CARDIO"), MACHINE ("MACHINE");
         private String type;
-        Type (String type) {
+        ExType (String type) {
             this.type = type;
         }
         @Override
@@ -37,18 +37,18 @@ public class Exercise {
         }
     }
 
-    private String name;
+    private String exName;
     private BodyPart bodyPart;
     private Scope scope;
-    private Type type;
+    private ExType exType;
     int idUser;
 
-    public String getName() {
-        return name;
+    public String getExName() {
+        return exName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setExName(String exName) {
+        this.exName = exName;
     }
 
     public BodyPart getBodyPart() {
@@ -67,12 +67,12 @@ public class Exercise {
         this.scope = scope;
     }
 
-    public Type getType() {
-        return type;
+    public ExType getExType() {
+        return exType;
     }
 
-    public void setType(Type type) {
-        this.type = type;
+    public void setType(ExType type) {
+        this.exType = type;
     }
 
     public int getIdUser() {

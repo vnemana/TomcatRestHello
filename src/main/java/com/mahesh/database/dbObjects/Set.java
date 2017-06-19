@@ -13,19 +13,19 @@ public class Set {
         }
     }
 
-    int idVisit;
+    int idSession;
     int idExercise;
     float weight;
     Unit unit;
     int reps;
     int setNumber;
 
-    public int getIdVisit() {
-        return idVisit;
+    public int getIdSession() {
+        return idSession;
     }
 
-    public void setIdVisit(int idVisit) {
-        this.idVisit = idVisit;
+    public void setIdSession(int idSession) {
+        this.idSession = idSession;
     }
 
     public int getIdExercise() {

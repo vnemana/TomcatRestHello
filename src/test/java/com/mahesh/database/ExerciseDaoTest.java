@@ -14,7 +14,7 @@ class ExerciseDaoTest {
             ExerciseDao exerciseDao = new ExerciseDao();
             exerciseDao.insertExercise(dbConn, "exerciseName", Exercise.BodyPart.SHOULDERS.toString(),
                     Exercise.Scope.USER.toString(),
-                    Exercise.Type.FREE_WEIGHTS.toString(),1);
+                    Exercise.ExType.FREE_WEIGHTS.toString(),1);
             Assert.assertTrue(true);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
